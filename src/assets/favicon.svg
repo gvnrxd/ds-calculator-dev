@@ -1,0 +1,5 @@
+<!-- public/favicon.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <circle cx="32" cy="32" r="28" fill="#2563eb"/>
+  <text x="50%" y="54%" text-anchor="middle" font-size="28" font-family="system-ui, Arial" fill="#fff">E</text>
+</svg>

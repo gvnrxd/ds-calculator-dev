@@ -1,9 +1,28 @@
 import { useState } from "react";
 
+// Import Components Here:
+import MainLayout from "./layouts/MainLayout";
+
 function App() {
+  const [formData, setFormData] = useState({
+    total: "",
+    baseFee: "",
+    hourlyWage: "",
+    hoursWorked: "",
+    totalSquareFoot: "",
+    numMaterials: "",
+    avgCostPerMaterial: "",
+    numMaterialsUsed: "",
+    tax: "",
+  });
+
   return (
     <>
-      <h1>Earnings Estimator</h1>
+      <MainLayout
+        author={"gvnrxd"}
+        formData={formData}
+        setFormData={setFormData}
+      />
     </>
   );
 }

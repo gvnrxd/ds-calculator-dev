@@ -1,0 +1,85 @@
+:root {
+  /* Light theme */
+  --background-color: #ffffff;
+  --text-color: #0f172a;
+
+  /* Color Pallette */
+  --primary-color: #ffffff;
+  --secondary-color: #000000;
+
+  /* Links / borders (light defaults) */
+  --border-color: #e2e8f0;
+  --border-color-strong: #cbd5e1;
+  --link-color: #2563eb;
+  --link-hover-color: #3b82f6;
+
+  /* Radius scale */
+  --radius-sm: 4px; /* subtle rounding */
+  --radius-md: 8px; /* default rounding */
+  --radius-lg: 16px; /* bigger surfaces */
+  --radius-full: 9999px; /* fully rounded (pill/circle) */
+
+  /* spacing scale */
+  --space-xxs: 0.25rem; /* 4px */
+  --space-xs: 0.5rem; /* 8px */
+  --space-sm: 0.75rem; /* 12px */
+  --space-md: 1rem; /* 16px */
+  --space-lg: 1.5rem; /* 24px */
+  --space-xl: 2rem; /* 32px */
+  --space-2xl: 3rem; /* 48px */
+
+  /* text scale */
+  --text-3xs: 0.25rem; /* 8px */
+  --text-xxs: 0.625rem; /* 10px */
+  --text-xs: 0.75rem; /* 12px */
+  --text-sm: 0.875rem; /* 14px */
+  --text-md: 1rem; /* 16px */
+  --text-lg: 1.125rem; /* 18px */
+  --text-xl: 1.25rem; /* 20px */
+  --text-2xl: 1.5rem; /* 24px */
+  --text-3xl: 1.875rem; /* 30px */
+  --text-4xl: 2.25rem; /* 36px */
+}
+
+/* Dark Theme 
+Overides ( by toggling class or data attribute) */
+:root[data-theme="dark"],
+.dark {
+  --background-color: #121212;
+  --text-color: #f1f5f9;
+  --text-muted: #a1a1aa;
+
+  --primary-color: #727171;
+  --secondary-color: #e2e8f0;
+
+  --border-color: #2a2a2a;
+  --border-color-strong: #3f3f46;
+
+  --link-color: #60a5fa;
+  --link-hover-color: #93c5fd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.5s;
+}
+
+a,
+a:visited {
+  color: var(--link-color);
+}
+a:hover {
+  color: var(--link-hover-color);
+}

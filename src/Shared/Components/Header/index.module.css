@@ -1,0 +1,18 @@
+/* Define header scoped variables */
+
+.header {
+  --header-color: #0f172a;
+  --header-text-color: #f1f5f9;
+  --header-hover-color: #38bdf8;
+}
+
+.header {
+  background-color: var(--header-color);
+  color: var(--header-text-color);
+  text-align: center;
+  padding: var(--space-md);
+}
+
+.header > * {
+  margin-bottom: 0.5rem;
+}

@@ -1,0 +1,5 @@
+.form {
+  display: grid;
+  gap: var(--space-xs);
+  font-size: var(--text-s);
+}
